@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8137"],
       "port": 8137
+    },
+    {
+      "name": "ghpages-subpath-test",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8151", "--directory", "C:/Users/JP/AppData/Local/Temp/claude/C--Users-JP-Documents-GitHub-Slimmetjie/ee9c6c70-0aa5-451f-957c-31d6fc1dc52a/scratchpad/ghpages-test"],
+      "port": 8151
     }
   ]
 }

@@ -2,7 +2,7 @@
 // Scope kom outomaties van die SW se eie ligging, so dit werk by "/" en "/slimmetjie/".
 
 // Verhoog hierdie weergawe by elke ontplooiing sodat kliënte vars lêers kry.
-const CACHE = 'slimmetjie-v5';
+const CACHE = 'slimmetjie-v6';
 
 // Kern-app — moet bestaan; cache by installasie.
 const CORE = [
@@ -17,7 +17,7 @@ const CORE = [
   'progress.js',
   'mascot.js',
   'feedback.js',
-  'graad_r_caps_modules.json',
+  'graad_r_modules.json',
   'data/content.json',
   'assets/svg.js',
   'assets/icons/icon.svg',

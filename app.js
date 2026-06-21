@@ -52,7 +52,7 @@ async function boot() {
 
   try {
     const [mods, content] = await Promise.all([
-      fetch(new URL('graad_r_caps_modules.json', BASE)).then(r => r.json()),
+      fetch(new URL('graad_r_modules.json', BASE)).then(r => r.json()),
       fetch(new URL('data/content.json', BASE)).then(r => r.json()).catch(() => ({})),
     ]);
     MODULES = mods.modules || [];
