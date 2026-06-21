@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Slimmetjie — Leer saam met Slimmetjie!</title>
+  <meta name="description" content="'n Afrikaanse leerapp vir kinders — Graad R.">
+  <meta name="theme-color" content="#7B2FBE">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Slimmetjie">
+
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="topbar">
+    <button id="backBtn" class="topbtn back-btn" hidden aria-label="Terug">
+      <span aria-hidden="true">⟵</span>
+    </button>
+
+    <button id="mascotBtn" class="mascot-btn" aria-label="Slimmetjie">
+      <img id="mascot" class="mascot" src="assets/mascot/slimmetjie_wave.svg" alt="Slimmetjie die springbok" draggable="false">
+    </button>
+
+    <h1 id="appTitle">Slimmetjie</h1>
+
+    <button id="babyToggle" class="topbtn baby-toggle" aria-pressed="false" aria-label="Baba-modus">
+      <span aria-hidden="true">👶</span>
+    </button>
+  </header>
+
+  <main id="view" aria-live="polite"></main>
+
+  <!-- Modale laag (ouerkontrole, antwoord-onthulling, ens.) -->
+  <div id="overlay" class="overlay" hidden></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "source": "CAPS KABV Grondslagfase Graad R",
+    "subjects": ["Lewensvaardigheid", "Wiskunde", "Afrikaans Huistaal"],
+    "target_age": "4-5 jaar (Graad R)",
+    "baby_sibling_age": "1 jaar",
+    "notes": "Skeppende Kunste en Liggaamsopvoeding uitgesluit — vereis fisiese aktiwiteit. App-geskikte inhoud slegs."
+  },
+  "modules": [
+
+    {
+      "id": "ls-01",
+      "subject": "Lewensvaardigheid",
+      "topic": "Ek — Persoonlike besonderhede",
+      "afrikaans_label": "Wie is ek?",
+      "keywords": ["naam", "ouderdom", "wat maak my spesiaal", "taal", "vermoëns", "gevoelens"],
+      "app_activity_type": "tap-and-name",
+      "description": "Kind tik op sy/haar foto of 'n prentjie en sê/hoor sy naam, ouderdom, ens.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "ls-02",
+      "subject": "Lewensvaardigheid",
+      "topic": "My liggaam — Liggaamsdele",
+      "afrikaans_label": "My Liggaam",
+      "keywords": ["kop", "skouers", "knieë", "tone", "oë", "ore", "neus", "mond", "hande", "voete", "elmboog", "maag"],
+      "app_activity_type": "tap-and-label",
+      "description": "Prentjie van 'n kind — tik op 'n liggaamsdeel en hoor die Afrikaanse naam uitgespreek. Wys-en-noem speletjie.",
+      "suitable_for_baby": true
+    },
+
+    {
+      "id": "ls-03",
+      "subject": "Lewensvaardigheid",
+      "topic": "My Sintuie",
+      "afrikaans_label": "Vyf Sintuie",
+      "keywords": ["sien", "hoor", "voel", "proe", "ruik", "oë", "ore", "neus", "mond", "hande"],
+      "app_activity_type": "matching-game",
+      "description": "Pas die sintuig by die regte liggaamsdeel. Klanke, prente van teksture, reuke as stimuli.",
+      "suitable_for_baby": true
+    },
+
+    {
+      "id": "ls-04",
+      "subject": "Lewensvaardigheid",
+      "topic": "Kleure rondom ons",
+      "afrikaans_label": "Kleure",
+      "keywords": ["rooi", "blou", "geel", "groen", "oranje", "pers", "swart", "wit", "pienk", "bruin"],
+      "app_activity_type": "colour-tap",
+      "description": "Groot kleurblokke — tik op 'n kleur en hoor die naam. Dan: 'Watter een is rooi?' — kind tik die regte blok.",
+      "suitable_for_baby": true
+    },
+
+    {
+      "id": "ls-05",
+      "subject": "Lewensvaardigheid",
+      "topic": "Vorms rondom ons",
+      "afrikaans_label": "Vorms",
+      "keywords": ["sirkel", "vierkant", "driehoek", "reghoek", "ster", "hartjie"],
+      "app_activity_type": "shape-matching",
+      "description": "Pas vorms bymekaar. Tik op 'n vorm en hoor naam. Eenvoudig genoeg vir baba om te geniet.",
+      "suitable_for_baby": true
+    },
+
+    {
+      "id": "ls-06",
+      "subject": "Lewensvaardigheid",
+      "topic": "Diere — Wild en Plaas",
+      "afrikaans_label": "Diere",
+      "keywords": ["hond", "kat", "koei", "perd", "skaap", "hoender", "olifant", "leeu", "slang", "aap", "seekoei", "sebra"],
+      "app_activity_type": "animal-sound-tap",
+      "description": "Groot kleurvolle dierprent — tik om die dier se klank te hoor. Afrikaanse naam verskyn en word uitgespreek. BAIE geskik vir baba.",
+      "suitable_for_baby": true
+    },
+
+    {
+      "id": "ls-07",
+      "subject": "Lewensvaardigheid",
+      "topic": "Voëls",
+      "afrikaans_label": "Voëls",
+      "keywords": ["voël", "vere", "bek", "vlug", "nes", "eier", "volstruis", "pikkewyn", "arend", "duif"],
+      "app_activity_type": "tap-and-sound",
+      "description": "Voëlprente met voëlklanke. Tik en hoor die voël sing/roep plus die Afrikaanse naam.",
+      "suitable_for_baby": true
+    },
+
+    {
+      "id": "ls-08",
+      "subject": "Lewensvaardigheid",
+      "topic": "Seisoene en Weer",
+      "afrikaans_label": "Die Weer",
+      "keywords": ["somer", "herfs", "winter", "lente", "warm", "koud", "reën", "son", "wind", "wolke"],
+      "app_activity_type": "scene-tap",
+      "description": "Weerstoneel — tik op die weerkaart en hoor die naam. Wat trek jy aan in die winter?",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "ls-09",
+      "subject": "Lewensvaardigheid",
+      "topic": "Vrugte",
+      "afrikaans_label": "Vrugte",
+      "keywords": ["appel", "piesang", "lemoen", "druiwe", "mango", "aarbei", "piesang", "peer", "kersiement"],
+      "app_activity_type": "tap-and-name",
+      "description": "Heldere vrugte-prente — tik en hoor naam plus kleur. Geskik vir herkenning en taal.",
+      "suitable_for_baby": true
+    },
+
+    {
+      "id": "ls-10",
+      "subject": "Lewensvaardigheid",
+      "topic": "Groente",
+      "afrikaans_label": "Groente",
+      "keywords": ["wortel", "aartappel", "tamatie", "kool", "soetrissie", "ui", "mielies", "boontjies"],
+      "app_activity_type": "tap-and-name",
+      "description": "Soos vrugte-module maar met groente. Kleur + naam + uitspraakludio.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "ls-11",
+      "subject": "Lewensvaardigheid",
+      "topic": "My Gesin",
+      "afrikaans_label": "My Gesin",
+      "keywords": ["ma", "pa", "ouma", "oupa", "suster", "broer", "baba", "tannie", "oom"],
+      "app_activity_type": "matching-game",
+      "description": "Pas gesinsrol by die prentjie. Hoor die Afrikaanse naam vir elke familielid.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "ls-12",
+      "subject": "Lewensvaardigheid",
+      "topic": "Vervoer",
+      "afrikaans_label": "Vervoer",
+      "keywords": ["motor", "bus", "trein", "vliegtuig", "fiets", "skip", "taxi", "vragmotor", "helikopter"],
+      "app_activity_type": "tap-and-sound",
+      "description": "Vervoermiddel-prente met klanke (trein-fluit, motor-toeter). Tik en hoor naam plus klank.",
+      "suitable_for_baby": true
+    },
+
+    {
+      "id": "ls-13",
+      "subject": "Lewensvaardigheid",
+      "topic": "Gesonde Gewoontes",
+      "afrikaans_label": "Bly Gesond",
+      "keywords": ["was hande", "tande borsel", "slaap", "gesonde kos", "oefening", "drink water"],
+      "app_activity_type": "sequence-tap",
+      "description": "Eenvoudige reeks: watter stappe om gesond te bly? Kind reël prente in volgorde.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "ls-14",
+      "subject": "Lewensvaardigheid",
+      "topic": "Dae van die week",
+      "afrikaans_label": "Dae van die Week",
+      "keywords": ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrydag", "Saterdag", "Sondag", "gister", "vandag", "môre"],
+      "app_activity_type": "sequence-calendar",
+      "description": "Kalenderblokke met name van dae. Hoor elke dag se naam, wys vandag, gister, môre.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "ls-15",
+      "subject": "Lewensvaardigheid",
+      "topic": "Dinosaurusse",
+      "afrikaans_label": "Dinosaurusse",
+      "keywords": ["Tirannosauras", "Triseratops", "Brontosaurus", "Stegosaurus", "fossiel", "uitgestorwe"],
+      "app_activity_type": "tap-and-name",
+      "description": "Kinders dol oor dino's. Tik en hoor name. Eenvoudige pret-feite. Goed vir betrokkenheid.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "math-01",
+      "subject": "Wiskunde",
+      "topic": "Tel — Getalle 1 tot 10",
+      "afrikaans_label": "Tel saam!",
+      "keywords": ["een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "nul"],
+      "app_activity_type": "counting-tap",
+      "description": "Tik op voorwerpe om te tel. Getalname in Afrikaans word uitgespreek. Kwartaal 1: 1-5, K2: 1-7, K3-4: 0-10.",
+      "suitable_for_baby": true,
+      "progression": {
+        "kwartaal_1": "1 tot 5",
+        "kwartaal_2": "1 tot 7",
+        "kwartaal_3": "1 tot 10",
+        "kwartaal_4": "0 tot 10 (insluitend nul)"
+      }
+    },
+
+    {
+      "id": "math-02",
+      "subject": "Wiskunde",
+      "topic": "Getalsimbole herken",
+      "afrikaans_label": "Syfers leer ken",
+      "keywords": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "0", "getalsimbool", "getalnaam"],
+      "app_activity_type": "number-recognition",
+      "description": "Wys 'n syfer, hoor die naam. Dan: 'Tik op die syfer 3.' Koppel simbool aan naam aan hoeveelheid.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "math-03",
+      "subject": "Wiskunde",
+      "topic": "Meer as / Minder as / Ewe veel",
+      "afrikaans_label": "Meer of Minder?",
+      "keywords": ["meer", "minder", "ewe veel", "dieselfde", "vergelyk", "groter", "kleiner"],
+      "app_activity_type": "comparison-game",
+      "description": "Twee groepe voorwerpe — kind kies watter groep meer of minder het. Visueel met teldiere.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "math-04",
+      "subject": "Wiskunde",
+      "topic": "Vorms — 2D",
+      "afrikaans_label": "2D Vorms",
+      "keywords": ["sirkel", "vierkant", "driehoek", "reghoek", "herken", "benoem", "vorms in die wêreld"],
+      "app_activity_type": "shape-sort",
+      "description": "Sorteer voorwerpe na die regte vorm. Wys watter alledaagse voorwerpe dieselfde vorm het (bv. wiel = sirkel).",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "math-05",
+      "subject": "Wiskunde",
+      "topic": "Vorms — 3D Voorwerpe",
+      "afrikaans_label": "3D Vorms",
+      "keywords": ["bol", "kubus", "silinder", "keël", "boks", "bal", "blik", "herken"],
+      "app_activity_type": "tap-and-name",
+      "description": "3D voorwerp-prente — tik en hoor naam. Koppel aan alledaagse voorwerpe (blik melk = silinder).",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "math-06",
+      "subject": "Wiskunde",
+      "topic": "Ruimtelike verwantskappe — Posisie",
+      "afrikaans_label": "Waar is dit?",
+      "keywords": ["bo", "onder", "langs", "voor", "agter", "in", "buite", "links", "regs", "naby", "ver"],
+      "app_activity_type": "position-game",
+      "description": "Prentjie van 'n kat en 'n doos — 'Waar is die kat? Bo of onder die doos?' Kind kies die regte woord.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "math-07",
+      "subject": "Wiskunde",
+      "topic": "Patrone",
+      "afrikaans_label": "Patrone",
+      "keywords": ["herhaal", "patroon", "kleur-patroon", "vorm-patroon", "wat kom volgende?"],
+      "app_activity_type": "pattern-complete",
+      "description": "Patroon van kleure of vorms begin — kind voltooi die patroon deur die regte keuse te tik.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "math-08",
+      "subject": "Wiskunde",
+      "topic": "Meting — Langer/Korter, Swaarder/Ligter",
+      "afrikaans_label": "Vergelyk groottes",
+      "keywords": ["lank", "kort", "swaar", "lig", "groot", "klein", "meet", "vergelyk"],
+      "app_activity_type": "comparison-visual",
+      "description": "Twee voorwerpe langs mekaar — watter een is langer/korter/swaarder? Visuele vergelyking.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "math-09",
+      "subject": "Wiskunde",
+      "topic": "Tyd — Dae, Maande, Dagroetin",
+      "afrikaans_label": "Tyd",
+      "keywords": ["oggend", "middag", "aand", "nag", "eerste", "laaste", "voor", "na", "maande", "seisoene"],
+      "app_activity_type": "sequence-tap",
+      "description": "Reeks van daaglikse roetine-prente — plaas in die regte volgorde (oggend, middag, aand).",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "math-10",
+      "subject": "Wiskunde",
+      "topic": "Data — Sorteer en Tel",
+      "afrikaans_label": "Sorteer dit!",
+      "keywords": ["sorteer", "groepeer", "kleur", "grootte", "vorm", "tel hoeveel", "meer as"],
+      "app_activity_type": "sort-and-count",
+      "description": "Verspreide voorwerpe — sleep elke item na die regte groep (rooi hier, blou daar). Tel dan elke groep.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "hl-01",
+      "subject": "Afrikaans Huistaal",
+      "topic": "Luister en Praat — Stories en Rympies",
+      "afrikaans_label": "Stories en Rympies",
+      "keywords": ["luister", "verhaal", "rympie", "liedjie", "storie", "praat", "herhaal"],
+      "app_activity_type": "story-listen",
+      "description": "Kort geanimeerde storie of rympie gespeel met duidelike Afrikaanse uitspraak. Kind kan herhaal laat speel.",
+      "suitable_for_baby": true
+    },
+
+    {
+      "id": "hl-02",
+      "subject": "Afrikaans Huistaal",
+      "topic": "Fonologiese bewustheid — Beginklanke",
+      "afrikaans_label": "Begin Klanke",
+      "keywords": ["k-at", "b-al", "m-a", "beginkonsonante", "klanke hoor", "woorde"],
+      "app_activity_type": "sound-match",
+      "description": "Hoor 'n klank (bv. 'k'). Tik op al die prente wat met 'k' begin — kat, koei, kos. Fonemiese bewustheid.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "hl-03",
+      "subject": "Afrikaans Huistaal",
+      "topic": "Woordeskat — Temas",
+      "afrikaans_label": "Nuwe Woorde",
+      "keywords": ["tema-woorde", "woordeskat", "benoeming", "beskrywing", "diere", "kos", "klere", "huis"],
+      "app_activity_type": "vocab-flashcard",
+      "description": "Flitskaart-styl: prent + Afrikaanse woord + uitspraak. Georganiseer per tema (diere, kos, klere, ens.).",
+      "suitable_for_baby": true
+    },
+
+    {
+      "id": "hl-04",
+      "subject": "Afrikaans Huistaal",
+      "topic": "Rymwoorde",
+      "afrikaans_label": "Rymwoorde",
+      "keywords": ["rym", "kat-mat", "bal-pal", "huis-muis", "klink dieselfde", "rympies"],
+      "app_activity_type": "rhyme-match",
+      "description": "'Kat' — tik op die prent wat rym: mat, bal, hond. Kind kies die regte rymwoord.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "hl-05",
+      "subject": "Afrikaans Huistaal",
+      "topic": "Boek-konsepte",
+      "afrikaans_label": "Boeke lees",
+      "keywords": ["boekomslag", "bladsye", "begin", "einde", "teks", "prente", "woorde", "links na regs"],
+      "app_activity_type": "interactive-book",
+      "description": "Eenvoudige digitale prenteboek. Kind blaai deur bladsye. Prente word beskryf in Afrikaans.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "hl-06",
+      "subject": "Afrikaans Huistaal",
+      "topic": "Prentlees — Prente beskryf",
+      "afrikaans_label": "Wat sien jy?",
+      "keywords": ["prent", "beskryf", "karakters", "plek", "gebeure", "vrae beantwoord", "voor", "agter"],
+      "app_activity_type": "picture-describe",
+      "description": "Lewendige toneel-prent — vrae verskyn soos 'Wie is hier?' of 'Wat doen die hond?' Kind tik op die regte prentjie-antwoord.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "hl-07",
+      "subject": "Afrikaans Huistaal",
+      "topic": "Alfabet — Lettersimbole",
+      "afrikaans_label": "Die Alfabet",
+      "keywords": ["a", "b", "c", "letters", "alfabet", "klank-simbool-koppeling", "name"],
+      "app_activity_type": "alphabet-tap",
+      "description": "Tik op 'n letter en hoor die klank. Dan wys 'n prent van 'n woord wat begin met die letter. Graad R-vlak: herkenning, nog nie formele lees nie.",
+      "suitable_for_baby": false
+    },
+
+    {
+      "id": "hl-08",
+      "subject": "Afrikaans Huistaal",
+      "topic": "Liedjies en Vinger-rympies",
+      "afrikaans_label": "Liedjies",
+      "keywords": ["sing", "vingerrympies", "ritme", "beweging", "herhaling", "aksies", "Afrikaans"],
+      "app_activity_type": "sing-along",
+      "description": "Bekende Afrikaanse kinderliedjies en vinger-rympies met animasie. Kind kan tik om te speel/stop. Uitstekend vir baba.",
+      "suitable_for_baby": true
+    }
+
+  ],
+
+  "baby_modules": {
+    "note": "Modules gemerk suitable_for_baby: true is geskik vir 1-jarige. Fokus op: groot kleurvolle prente, klanke/geluide, musikale ritme, eenvoudige oorsaak-en-gevolg (tik → klank).",
+    "ids": ["ls-02", "ls-03", "ls-04", "ls-05", "ls-06", "ls-07", "ls-09", "ls-12", "math-01", "hl-01", "hl-03", "hl-08"]
+  },
+
+  "suggested_first_modules": {
+    "reason": "Begin met vertroud — diere en klanke is universeel boeiend vir beide ouderdomsgroepe",
+    "ids": ["ls-06", "ls-02", "ls-04", "math-01", "hl-08"]
+  }
+}

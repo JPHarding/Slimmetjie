@@ -1,0 +1,91 @@
+{
+  "ls-06": {
+    "items": [
+      { "key": "hond",    "afrikaans": "Hond",    "svg": "hond",    "photo": "hond.jpg",    "klankKey": "hond_klank",    "klank": "Woef woef!" },
+      { "key": "kat",     "afrikaans": "Kat",     "svg": "kat",     "photo": "kat.jpg",     "klankKey": "kat_klank",     "klank": "Miaau!" },
+      { "key": "koei",    "afrikaans": "Koei",    "svg": "koei",    "photo": "koei.jpg",    "klankKey": "koei_klank",    "klank": "Moe!" },
+      { "key": "perd",    "afrikaans": "Perd",    "svg": "perd",    "photo": "perd.jpg",    "klankKey": "perd_klank",    "klank": "Ie-ha-ha!" },
+      { "key": "skaap",   "afrikaans": "Skaap",   "svg": "skaap",   "photo": "skaap.jpg",   "klankKey": "skaap_klank",   "klank": "Bêêê!" },
+      { "key": "hoender", "afrikaans": "Hoender", "svg": "hoender", "photo": "hoender.jpg", "klankKey": "hoender_klank", "klank": "Tok, tok, tok!" },
+      { "key": "olifant", "afrikaans": "Olifant", "svg": "olifant", "photo": "olifant.jpg", "klankKey": "olifant_klank", "klank": "Trrr-tûût!" },
+      { "key": "leeu",    "afrikaans": "Leeu",    "svg": "leeu",    "photo": "leeu.jpg",    "klankKey": "leeu_klank",    "klank": "Rrroaarr!" },
+      { "key": "slang",   "afrikaans": "Slang",   "svg": "slang",   "photo": "slang.jpg",   "klankKey": "slang_klank",   "klank": "Sssss!" },
+      { "key": "aap",     "afrikaans": "Aap",     "svg": "aap",     "photo": "aap.jpg",     "klankKey": "aap_klank",     "klank": "Oe-oe-aa-aa!" },
+      { "key": "seekoei", "afrikaans": "Seekoei", "svg": "seekoei", "photo": "seekoei.jpg", "klankKey": "seekoei_klank", "klank": "Hroef hroef!" },
+      { "key": "sebra",   "afrikaans": "Sebra",   "svg": "sebra",   "photo": "sebra.jpg",   "klankKey": "sebra_klank",   "klank": "Ie-ha!" }
+    ]
+  },
+
+  "ls-04": {
+    "items": [
+      { "key": "rooi",   "afrikaans": "Rooi",   "hex": "#E63946" },
+      { "key": "blou",   "afrikaans": "Blou",   "hex": "#1D7FE0" },
+      { "key": "geel",   "afrikaans": "Geel",   "hex": "#FFD166" },
+      { "key": "groen",  "afrikaans": "Groen",  "hex": "#06D6A0" },
+      { "key": "oranje", "afrikaans": "Oranje", "hex": "#FB8500" },
+      { "key": "pers",   "afrikaans": "Pers",   "hex": "#7B2FBE" },
+      { "key": "swart",  "afrikaans": "Swart",  "hex": "#2B2140" },
+      { "key": "wit",    "afrikaans": "Wit",    "hex": "#FFFFFF" },
+      { "key": "pienk",  "afrikaans": "Pienk",  "hex": "#FF6FAE" },
+      { "key": "bruin",  "afrikaans": "Bruin",  "hex": "#8B5E34" }
+    ]
+  },
+
+  "math-01": {
+    "object": "star",
+    "numbers": {
+      "0": "nul", "1": "een", "2": "twee", "3": "drie", "4": "vier", "5": "vyf",
+      "6": "ses", "7": "sewe", "8": "agt", "9": "nege", "10": "tien"
+    }
+  },
+
+  "ls-02": {
+    "parts": [
+      { "part": "kop",     "afrikaans": "Kop" },
+      { "part": "oë",      "afrikaans": "Oë" },
+      { "part": "ore",     "afrikaans": "Ore" },
+      { "part": "neus",    "afrikaans": "Neus" },
+      { "part": "mond",    "afrikaans": "Mond" },
+      { "part": "skouers", "afrikaans": "Skouers" },
+      { "part": "hande",   "afrikaans": "Hande" },
+      { "part": "maag",    "afrikaans": "Maag" },
+      { "part": "knieë",   "afrikaans": "Knieë" },
+      { "part": "voete",   "afrikaans": "Voete" },
+      { "part": "tone",    "afrikaans": "Tone" },
+      { "part": "elmboog", "afrikaans": "Elmboog" }
+    ]
+  },
+
+  "hl-08": {
+    "songs": [
+      {
+        "key": "wielie", "title": "Wielie Wielie Walie", "icon": "🐵",
+        "lines": [
+          { "key": "lied_wielie_1", "text": "Wielie, wielie, walie," },
+          { "key": "lied_wielie_2", "text": "die aap sit op die balie." },
+          { "key": "lied_wielie_3", "text": "Die balie is te warm," },
+          { "key": "lied_wielie_4", "text": "die aap braai sy arm!" }
+        ]
+      },
+      {
+        "key": "trippe", "title": "Trippe Trappe Trone", "icon": "🦆",
+        "lines": [
+          { "key": "lied_trippe_1", "text": "Trippe trappe trone," },
+          { "key": "lied_trippe_2", "text": "die varke in die bone," },
+          { "key": "lied_trippe_3", "text": "die koei is in die klawer," },
+          { "key": "lied_trippe_4", "text": "die perd is in die hawer," },
+          { "key": "lied_trippe_5", "text": "die eend is in die water," },
+          { "key": "lied_trippe_6", "text": "kwaak, kwaak, kwaak!" }
+        ]
+      },
+      {
+        "key": "boere", "title": "Hoe Ry die Boere", "icon": "🐎",
+        "lines": [
+          { "key": "lied_boere_1", "text": "Hoe ry die boere? Sit, sit, so!" },
+          { "key": "lied_boere_2", "text": "Hoe ry die dames? Sit, sit, so!" },
+          { "key": "lied_boere_3", "text": "Hoe ry die soldate? Sit, sit, so!" }
+        ]
+      }
+    ]
+  }
+}

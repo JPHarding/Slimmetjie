@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="utf-8">
+  <title>Slimmetjie</title>
+  <script>
+    // GitHub Pages SPA-terugval: behou die aangevraagde pad en herlei na die
+    // app-wortel met die res as 'n hash-roete. Werk by enige basis-URL.
+    (function () {
+      var seg = location.pathname.split('/').filter(Boolean);
+      // Op 'n projeksite is die eerste segment die repo-naam (bv. "slimmetjie").
+      var base = seg.length ? '/' + seg[0] + '/' : '/';
+      var rest = location.pathname.slice(base.length);
+      var target = base + (rest ? '#/' + rest : '') + location.search + location.hash;
+      location.replace(target);
+    })();
+  </script>
+</head>
+<body></body>
+</html>

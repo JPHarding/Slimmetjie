@@ -1,0 +1,30 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Slimmetjie">
+  <!-- vol-bloeisel agtergrond (maskable-veilig) -->
+  <rect width="512" height="512" rx="96" fill="#7B2FBE"/>
+  <circle cx="256" cy="256" r="180" fill="#FFD166"/>
+  <g stroke="#3A2A1A" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+    <!-- horings -->
+    <path d="M214 132 q-18 -58 8 -74" fill="none" stroke="#4A3826" stroke-width="14"/>
+    <path d="M298 132 q18 -58 -8 -74" fill="none" stroke="#4A3826" stroke-width="14"/>
+    <!-- kop -->
+    <ellipse cx="256" cy="262" rx="118" ry="106" fill="#D6A15B"/>
+    <!-- ore -->
+    <ellipse cx="150" cy="248" rx="40" ry="22" fill="#D6A15B" transform="rotate(-25 150 248)"/>
+    <ellipse cx="362" cy="248" rx="40" ry="22" fill="#D6A15B" transform="rotate(25 362 248)"/>
+    <!-- wit gesig -->
+    <ellipse cx="256" cy="288" rx="76" ry="68" fill="#FFFFFF"/>
+    <path d="M214 240 L188 326" stroke="#8A5A2B" stroke-width="12" fill="none"/>
+    <path d="M298 240 L324 326" stroke="#8A5A2B" stroke-width="12" fill="none"/>
+    <!-- oë -->
+    <circle cx="224" cy="272" r="22" fill="#fff"/>
+    <circle cx="288" cy="272" r="22" fill="#fff"/>
+    <circle cx="227" cy="275" r="11" fill="#2B2140"/>
+    <circle cx="291" cy="275" r="11" fill="#2B2140"/>
+    <circle cx="231" cy="270" r="4" fill="#fff"/>
+    <circle cx="295" cy="270" r="4" fill="#fff"/>
+    <circle cx="200" cy="306" r="13" fill="#FFB3C1" stroke="none"/>
+    <circle cx="312" cy="306" r="13" fill="#FFB3C1" stroke="none"/>
+    <ellipse cx="256" cy="300" rx="13" ry="9" fill="#3A2A1A" stroke="none"/>
+    <path d="M228 320 q28 28 56 0" fill="none" stroke="#3A2A1A" stroke-width="8"/>
+  </g>
+</svg>

@@ -1,0 +1,377 @@
+/* Slimmetjie — globale style
+   Groot tik-teikens, ronde hoeke, warm palet, geen scroll, werk portret + landskap. */
+
+:root {
+  --geel: #FFD166;
+  --koraal: #EF476F;
+  --teal: #06D6A0;
+  --pers: #7B2FBE;
+  --wit: #FFFFFF;
+  --ink: #2B2140;
+  --sag: #FBF7FF;
+
+  --radius: 28px;
+  --tap: clamp(80px, 16vmin, 160px);   /* minimum tik-teiken */
+  --gap: clamp(12px, 2.4vmin, 28px);
+  --topbar-h: clamp(64px, 11vh, 110px);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+[hidden] { display: none !important; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;            /* geen scroll */
+  overscroll-behavior: none;
+  background: var(--sag);
+  color: var(--ink);
+  font-family: "Comic Sans MS", "Baloo 2", "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;              /* dvh hou voorrang waar ondersteun */
+}
+
+/* ---------- Topbalk ---------- */
+#topbar {
+  flex: 0 0 auto;
+  height: var(--topbar-h);
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  padding: 0 clamp(10px, 3vw, 28px);
+  background: var(--pers);
+  color: var(--wit);
+  box-shadow: 0 4px 0 rgba(0,0,0,.12);
+  z-index: 10;
+}
+
+#appTitle {
+  flex: 1;
+  margin: 0;
+  font-size: clamp(24px, 5vmin, 44px);
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+.topbtn {
+  flex: 0 0 auto;
+  width: clamp(52px, 9vmin, 76px);
+  height: clamp(52px, 9vmin, 76px);
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,.22);
+  color: var(--wit);
+  font-size: clamp(26px, 5vmin, 40px);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: transform .08s ease, background .15s ease;
+}
+.topbtn:active { transform: scale(.9); }
+.baby-toggle[aria-pressed="true"] { background: var(--geel); color: var(--ink); }
+
+.mascot-btn {
+  flex: 0 0 auto;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.mascot {
+  height: clamp(48px, 9vmin, 92px);
+  width: auto;
+  pointer-events: none;
+}
+
+/* ---------- Hoof aansig ---------- */
+#view {
+  flex: 1 1 auto;
+  min-height: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: var(--gap);
+  overflow: hidden;
+}
+
+/* ---------- Tuisrooster ---------- */
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);     /* 2 per ry op iPad */
+  gap: var(--gap);
+  overflow-y: auto;                          /* slegs die rooster mag rol */
+  -webkit-overflow-scrolling: touch;
+  padding: 4px;
+  align-content: start;
+}
+@media (min-width: 900px) and (orientation: landscape) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.card {
+  position: relative;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--wit);
+  box-shadow: 0 6px 0 rgba(123,47,190,.18);
+  padding: clamp(10px, 2.4vmin, 22px);
+  min-height: clamp(120px, 22vmin, 220px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform .1s ease;
+}
+.card:active { transform: scale(.96); }
+.card .ikoon { font-size: clamp(38px, 8vmin, 72px); line-height: 1; }
+.card .naam {
+  font-size: clamp(18px, 3.2vmin, 30px);
+  font-weight: 700;
+  text-align: center;
+}
+.card .vak { font-size: clamp(12px, 1.8vmin, 16px); opacity: .55; }
+
+.card .sterre { font-size: clamp(14px, 2.4vmin, 22px); color: var(--geel); letter-spacing: 2px; }
+.card .baba-badge {
+  position: absolute; top: 8px; right: 10px; font-size: clamp(18px, 3vmin, 26px);
+}
+.card .klaar-kol {
+  position: absolute; top: 10px; left: 10px;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--teal); box-shadow: 0 0 0 3px var(--wit);
+}
+
+/* Vak-kleur strepe */
+.card[data-vak="Lewensvaardigheid"] { box-shadow: 0 6px 0 rgba(6,214,160,.35); }
+.card[data-vak="Wiskunde"]          { box-shadow: 0 6px 0 rgba(239,71,111,.30); }
+.card[data-vak="Afrikaans Huistaal"]{ box-shadow: 0 6px 0 rgba(255,209,102,.55); }
+
+/* ---------- Algemene module-uitleg ---------- */
+.module-stage {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  text-align: center;
+}
+.module-titel {
+  font-size: clamp(22px, 4.4vmin, 40px);
+  margin: 0;
+}
+.prompt {
+  font-size: clamp(20px, 3.6vmin, 34px);
+  font-weight: 700;
+  margin: 0;
+  min-height: 1.4em;
+}
+
+/* groot tikbare blok */
+.tap-tile, .choice {
+  border: 4px solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--wit);
+  min-width: var(--tap);
+  min-height: var(--tap);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform .08s ease;
+  font-size: clamp(20px, 4vmin, 40px);
+  font-weight: 700;
+}
+.tap-tile:active, .choice:active { transform: scale(.93); }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  justify-content: center;
+  align-items: center;
+}
+
+/* groot SVG-tooneel */
+.svg-stage {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.svg-stage svg, .svg-stage img { max-height: 100%; max-width: 100%; height: auto; }
+
+/* Pyltjie-navigasie */
+.nav-arrow {
+  border: none;
+  background: var(--teal);
+  color: var(--wit);
+  width: clamp(56px, 10vmin, 84px);
+  height: clamp(56px, 10vmin, 84px);
+  border-radius: 50%;
+  font-size: clamp(28px, 5vmin, 46px);
+  cursor: pointer;
+  box-shadow: 0 5px 0 rgba(0,0,0,.15);
+}
+.nav-arrow:active { transform: translateY(3px); box-shadow: none; }
+
+/* Foto-knoppie */
+.foto-knop {
+  border: none;
+  background: var(--geel);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: clamp(16px, 2.6vmin, 24px);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 0 rgba(0,0,0,.12);
+}
+
+/* Animasies */
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  30%     { transform: translateY(-26px) scale(1.06); }
+  60%     { transform: translateY(0) scale(1); }
+}
+.bounce { animation: bounce .6s ease 2; }
+
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20%,60% { transform: translateX(-10px); }
+  40%,80% { transform: translateX(10px); }
+}
+.shake { animation: shake .4s ease; }
+
+@keyframes pop {
+  0% { transform: scale(.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.pop { animation: pop .25s ease; }
+
+.regte-antwoord { outline: 6px solid var(--teal); outline-offset: 4px; }
+
+/* ---------- Overlay (ouerkontrole / antwoord) ---------- */
+.overlay {
+  position: fixed; inset: 0;
+  background: rgba(43,33,64,.55);
+  display: grid; place-items: center;
+  padding: 24px; z-index: 100;
+}
+.overlay[hidden] { display: none; }
+.panel {
+  background: var(--wit);
+  border-radius: var(--radius);
+  padding: clamp(18px, 4vmin, 36px);
+  max-width: min(560px, 92vw);
+  width: 100%;
+  box-shadow: 0 12px 0 rgba(0,0,0,.2);
+  text-align: center;
+}
+.panel h2 { margin-top: 0; font-size: clamp(22px, 4vmin, 34px); }
+.panel .ry { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 14px 0; flex-wrap: wrap; }
+.panel button.aksie {
+  border: none; border-radius: 16px; padding: 12px 18px; font-size: 18px;
+  font-weight: 700; cursor: pointer; background: var(--teal); color: var(--wit);
+}
+.panel button.gevaar { background: var(--koraal); }
+.panel .toemaak { background: var(--pers); }
+
+/* "Kom binnekort" plekhouer (Fase 3 modules) */
+.binnekort {
+  flex: 1; display: grid; place-items: center; text-align: center;
+  font-size: clamp(20px, 4vmin, 34px); gap: 16px;
+}
+.binnekort .groot { font-size: clamp(60px, 16vmin, 140px); }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);
+}
+
+/* Tikbare SVG-dele (ls-02 liggaam) */
+.svg-stage [data-part] {
+  cursor: pointer;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform .12s ease;
+}
+.svg-stage [data-part].tik { transform: scale(1.18); }
+
+/* Diere-tooneel (ls-06): middel-area bind die hoogte sodat die SVG nooit
+   die foto-knoppie van die skerm af stoot nie. */
+.dier-middel {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;          /* full-tap kry die volle (begrensde) hoogte */
+  justify-content: center;
+  gap: var(--gap);
+}
+.dier-middel > .nav-arrow { align-self: center; flex: 0 0 auto; }
+
+/* Heel-skerm tikbare dier (ls-06) */
+.full-tap {
+  flex: 1 1 auto; min-width: 0; min-height: 0;
+  display: grid; place-items: center;
+  cursor: pointer; position: relative; overflow: hidden;
+}
+.full-tap svg, .full-tap img { max-height: 100%; max-width: 100%; width: auto; height: auto; }
+.foto-laag {
+  position: absolute; inset: 0;
+  background: var(--sag);
+  padding: 10px;
+}
+/* width/height 100% teen die begrensde absolute boks + object-fit:contain
+   laat die foto binne pas sonder om oor die skerm te stoot. */
+.foto-laag img {
+  display: block;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
+
+/* Kleurblokke (ls-04) */
+.kleur-blok {
+  flex: 1 1 30%;
+  min-width: var(--tap); min-height: var(--tap);
+  border: 5px solid var(--ink);
+  border-radius: var(--radius);
+  display: flex; align-items: flex-end; justify-content: center;
+  padding-bottom: 10px;
+  font-size: clamp(16px, 3vmin, 28px); font-weight: 800;
+  cursor: pointer; transition: transform .08s ease;
+}
+.kleur-blok:active { transform: scale(.94); }
+.kleur-blok .etiket {
+  background: rgba(255,255,255,.85); color: var(--ink);
+  border-radius: 999px; padding: 3px 14px;
+}
+
+/* Tel-voorwerpe (math-01) */
+.tel-wrap { display: flex; flex-wrap: wrap; gap: var(--gap); justify-content: center; align-content: center; flex: 1; min-height: 0; }
+.tel-item { width: clamp(64px, 13vmin, 110px); cursor: pointer; transition: transform .1s ease; }
+.tel-item:active { transform: scale(.9); }
+.tel-teller { font-size: clamp(40px, 10vmin, 96px); font-weight: 800; color: var(--pers); }
+
+/* Sing-saam (hl-08) */
+.lied-icoon { font-size: clamp(70px, 18vmin, 150px); }
+.lied-reels { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.lied-reel { font-size: clamp(18px, 3.2vmin, 30px); opacity: .45; transition: opacity .2s, transform .2s; }
+.lied-reel.aktief { opacity: 1; transform: scale(1.08); font-weight: 800; color: var(--pers); }
+.lied-knoppe { display: flex; gap: var(--gap); }
