@@ -208,3 +208,17 @@ export function bodyFigure() {
     </g>
   </svg>`;
 }
+
+// 2D-vorms (ls-05, math-04)
+function shapeWrap(inner) {
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="${OUT}" stroke-width="5" stroke-linejoin="round">${inner}</g></svg>`;
+}
+export const SHAPES = {
+  sirkel:   (f = '#06D6A0') => shapeWrap(`<circle cx="50" cy="50" r="40" fill="${f}"/>`),
+  vierkant: (f = '#EF476F') => shapeWrap(`<rect x="13" y="13" width="74" height="74" rx="8" fill="${f}"/>`),
+  driehoek: (f = '#FFD166') => shapeWrap(`<polygon points="50,12 90,86 10,86" fill="${f}"/>`),
+  reghoek:  (f = '#1D7FE0') => shapeWrap(`<rect x="8" y="28" width="84" height="44" rx="8" fill="${f}"/>`),
+  ster:     (f = '#FB8500') => shapeWrap(`<path d="M50 8 L61 38 L94 38 L67 59 L78 92 L50 71 L22 92 L33 59 L6 38 L39 38 Z" fill="${f}"/>`),
+  hartjie:  (f = '#E63946') => shapeWrap(`<path d="M50 86 C10 56 12 22 36 22 C46 22 50 33 50 33 C50 33 54 22 64 22 C88 22 90 56 50 86 Z" fill="${f}"/>`),
+};

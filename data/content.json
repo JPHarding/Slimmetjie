@@ -87,5 +87,218 @@
         ]
       }
     ]
+  },
+
+  "ls-07": {
+    "items": [
+      { "key": "volstruis", "afrikaans": "Volstruis", "emoji": "🦤", "photo": "volstruis.jpg", "klankKey": "volstruis_klank", "klank": "Boemm boemm!" },
+      { "key": "pikkewyn",  "afrikaans": "Pikkewyn",  "emoji": "🐧", "photo": "pikkewyn.jpg",  "klankKey": "pikkewyn_klank",  "klank": "Èè-aw!" },
+      { "key": "arend",     "afrikaans": "Arend",     "emoji": "🦅", "photo": "arend.jpg",     "klankKey": "arend_klank",     "klank": "Skreeee!" },
+      { "key": "duif",      "afrikaans": "Duif",      "emoji": "🕊️", "photo": "duif.jpg",      "klankKey": "duif_klank",      "klank": "Hoe-koer!" },
+      { "key": "flamink",   "afrikaans": "Flamink",   "emoji": "🦩", "photo": "flamink.jpg",   "klankKey": "flamink_klank",   "klank": "Honk honk!" },
+      { "key": "papegaai",  "afrikaans": "Papegaai",  "emoji": "🦜", "photo": "papegaai.jpg",  "klankKey": "papegaai_klank",  "klank": "Skwaak! Hallo!" }
+    ]
+  },
+
+  "ls-09": {
+    "items": [
+      { "key": "appel",      "afrikaans": "Appel",      "emoji": "🍎", "photo": "appel.jpg" },
+      { "key": "piesang",    "afrikaans": "Piesang",    "emoji": "🍌", "photo": "piesang.jpg" },
+      { "key": "lemoen",     "afrikaans": "Lemoen",     "emoji": "🍊", "photo": "lemoen.jpg" },
+      { "key": "druiwe",     "afrikaans": "Druiwe",     "emoji": "🍇", "photo": "druiwe.jpg" },
+      { "key": "mango",      "afrikaans": "Mango",      "emoji": "🥭", "photo": "mango.jpg" },
+      { "key": "aarbei",     "afrikaans": "Aarbei",     "emoji": "🍓", "photo": "aarbei.jpg" },
+      { "key": "peer",       "afrikaans": "Peer",       "emoji": "🍐", "photo": "peer.jpg" },
+      { "key": "waatlemoen", "afrikaans": "Waatlemoen", "emoji": "🍉", "photo": "waatlemoen.jpg" },
+      { "key": "kersie",     "afrikaans": "Kersie",     "emoji": "🍒", "photo": "kersie.jpg" },
+      { "key": "pynappel",   "afrikaans": "Pynappel",   "emoji": "🍍", "photo": "pynappel.jpg" },
+      { "key": "spanspek",   "afrikaans": "Spanspek",   "emoji": "🍈", "photo": "spanspek.jpg" }
+    ]
+  },
+
+  "ls-10": {
+    "items": [
+      { "key": "wortel",     "afrikaans": "Wortel",     "emoji": "🥕", "photo": "wortel.jpg" },
+      { "key": "aartappel",  "afrikaans": "Aartappel",  "emoji": "🥔", "photo": "aartappel.jpg" },
+      { "key": "tamatie",    "afrikaans": "Tamatie",    "emoji": "🍅", "photo": "tamatie.jpg" },
+      { "key": "kool",       "afrikaans": "Kool",       "emoji": "🥬", "photo": "kool.jpg" },
+      { "key": "soetrissie", "afrikaans": "Soetrissie", "emoji": "🫑", "photo": "soetrissie.jpg" },
+      { "key": "ui",         "afrikaans": "Ui",         "emoji": "🧅", "photo": "ui.jpg" },
+      { "key": "mielies",    "afrikaans": "Mielies",    "emoji": "🌽", "photo": "mielies.jpg" },
+      { "key": "boontjies",  "afrikaans": "Boontjies",  "emoji": "🫛", "photo": "boontjies.jpg" }
+    ]
+  },
+
+  "ls-12": {
+    "items": [
+      { "key": "motor",      "afrikaans": "Motor",      "emoji": "🚗", "photo": "motor.jpg",      "klankKey": "motor_klank",      "klank": "Toet toet!" },
+      { "key": "bus",        "afrikaans": "Bus",        "emoji": "🚌", "photo": "bus.jpg",        "klankKey": "bus_klank",        "klank": "Brrrm!" },
+      { "key": "trein",      "afrikaans": "Trein",      "emoji": "🚂", "photo": "trein.jpg",      "klankKey": "trein_klank",      "klank": "Tjoeke-tjoeke, fwiiit!" },
+      { "key": "vliegtuig",  "afrikaans": "Vliegtuig",  "emoji": "✈️", "photo": "vliegtuig.jpg",  "klankKey": "vliegtuig_klank",  "klank": "Whoooosh!" },
+      { "key": "fiets",      "afrikaans": "Fiets",      "emoji": "🚲", "photo": "fiets.jpg",      "klankKey": "fiets_klank",      "klank": "Tring tring!" },
+      { "key": "skip",       "afrikaans": "Skip",       "emoji": "🚢", "photo": "skip.jpg",       "klankKey": "skip_klank",       "klank": "Toeoeoet!" },
+      { "key": "taxi",       "afrikaans": "Taxi",       "emoji": "🚕", "photo": "taxi.jpg",       "klankKey": "taxi_klank",       "klank": "Hoot hoot!" },
+      { "key": "vragmotor",  "afrikaans": "Vragmotor",  "emoji": "🚚", "photo": "vragmotor.jpg",  "klankKey": "vragmotor_klank",  "klank": "Vroom!" },
+      { "key": "helikopter", "afrikaans": "Helikopter", "emoji": "🚁", "photo": "helikopter.jpg", "klankKey": "helikopter_klank", "klank": "Wop-wop-wop!" }
+    ]
+  },
+
+  "ls-15": {
+    "items": [
+      { "key": "trex",         "afrikaans": "Tirannosourus", "emoji": "🦖", "photo": "trex.png" },
+      { "key": "triceratops",  "afrikaans": "Triseratops",   "emoji": "🦕", "photo": "triceratops.png" },
+      { "key": "brontosaurus", "afrikaans": "Brontosourus",  "emoji": "🦕", "photo": "brontosaurus.png" },
+      { "key": "stegosaurus",  "afrikaans": "Stegosourus",   "emoji": "🦖", "photo": "stegosaurus.png" },
+      { "key": "fossiel",      "afrikaans": "Fossiel",       "emoji": "🦴", "photo": "fossiel.png" }
+    ]
+  },
+
+  "math-05": {
+    "items": [
+      { "key": "bol",      "afrikaans": "Bol",      "emoji": "⚽" },
+      { "key": "kubus",    "afrikaans": "Kubus",    "emoji": "🧊" },
+      { "key": "silinder", "afrikaans": "Silinder", "emoji": "🧴" },
+      { "key": "keel",     "afrikaans": "Keël",     "emoji": "🍦" },
+      { "key": "boks",     "afrikaans": "Boks",     "emoji": "📦" },
+      { "key": "blik",     "afrikaans": "Blik",     "emoji": "🥫" }
+    ]
+  },
+
+  "hl-03": {
+    "items": [
+      { "key": "hemp",   "afrikaans": "Hemp",   "emoji": "👕" },
+      { "key": "broek",  "afrikaans": "Broek",  "emoji": "👖" },
+      { "key": "skoene", "afrikaans": "Skoene", "emoji": "👟" },
+      { "key": "hoed",   "afrikaans": "Hoed",   "emoji": "👒" },
+      { "key": "huis",   "afrikaans": "Huis",   "emoji": "🏠" },
+      { "key": "bed",    "afrikaans": "Bed",    "emoji": "🛏️" },
+      { "key": "stoel",  "afrikaans": "Stoel",  "emoji": "🪑" },
+      { "key": "boek",   "afrikaans": "Boek",   "emoji": "📖" },
+      { "key": "bottel", "afrikaans": "Bottel", "emoji": "🍼" },
+      { "key": "bal",    "afrikaans": "Bal",    "emoji": "⚽" }
+    ]
+  },
+
+  "ls-03": {
+    "matching": {
+      "prompt": "Pas die sintuig by die regte ding!",
+      "pairs": [
+        { "key": "sien", "afrikaans": "Sien", "leftEmoji": "👁️", "right": "🌈" },
+        { "key": "hoor", "afrikaans": "Hoor", "leftEmoji": "👂", "right": "🥁" },
+        { "key": "ruik", "afrikaans": "Ruik", "leftEmoji": "👃", "right": "🌸" },
+        { "key": "proe", "afrikaans": "Proe", "leftEmoji": "👅", "right": "🍦" },
+        { "key": "voel", "afrikaans": "Voel", "leftEmoji": "✋", "right": "🧊" }
+      ]
+    }
+  },
+
+  "ls-11": {
+    "matching": {
+      "prompt": "Pas die woord by die regte persoon!",
+      "pairs": [
+        { "key": "ma",     "afrikaans": "Ma",     "right": "👩" },
+        { "key": "pa",     "afrikaans": "Pa",     "right": "👨" },
+        { "key": "ouma",   "afrikaans": "Ouma",   "right": "👵" },
+        { "key": "oupa",   "afrikaans": "Oupa",   "right": "👴" },
+        { "key": "baba",   "afrikaans": "Baba",   "right": "👶" },
+        { "key": "suster", "afrikaans": "Suster", "right": "👧" },
+        { "key": "broer",  "afrikaans": "Broer",  "right": "👦" }
+      ]
+    }
+  },
+
+  "ls-05": {
+    "items": [
+      { "key": "sirkel",   "afrikaans": "Sirkel",   "shape": "sirkel",   "hex": "#06D6A0" },
+      { "key": "vierkant", "afrikaans": "Vierkant", "shape": "vierkant", "hex": "#EF476F" },
+      { "key": "driehoek", "afrikaans": "Driehoek", "shape": "driehoek", "hex": "#FFD166" },
+      { "key": "reghoek",  "afrikaans": "Reghoek",  "shape": "reghoek",  "hex": "#1D7FE0" },
+      { "key": "ster",     "afrikaans": "Ster",     "shape": "ster",     "hex": "#FB8500" },
+      { "key": "hartjie",  "afrikaans": "Hartjie",  "shape": "hartjie",  "hex": "#E63946" }
+    ]
+  },
+
+  "math-04": {
+    "items": [
+      { "key": "sirkel",   "afrikaans": "Sirkel",   "shape": "sirkel",   "hex": "#06D6A0" },
+      { "key": "vierkant", "afrikaans": "Vierkant", "shape": "vierkant", "hex": "#EF476F" },
+      { "key": "driehoek", "afrikaans": "Driehoek", "shape": "driehoek", "hex": "#FFD166" },
+      { "key": "reghoek",  "afrikaans": "Reghoek",  "shape": "reghoek",  "hex": "#1D7FE0" }
+    ]
+  },
+
+  "math-03": {
+    "compare": "count",
+    "emojis": ["🍎", "⭐", "🐟", "🌸", "🍌", "🐝"],
+    "phrases": {
+      "vraag_meer": "Watter een het meer?",
+      "vraag_minder": "Watter een het minder?"
+    }
+  },
+
+  "math-08": {
+    "compare": "size",
+    "emojis": ["🐘", "🎈", "🌳", "🐭", "⭐"],
+    "phrases": {
+      "vraag_groter": "Watter een is groter?",
+      "vraag_kleiner": "Watter een is kleiner?",
+      "vraag_langer": "Watter een is langer?",
+      "vraag_korter": "Watter een is korter?"
+    }
+  },
+
+  "ls-13": {
+    "prompt": "Wat doen ons eerste? Sit in volgorde!",
+    "items": [
+      { "key": "opstaan",      "afrikaans": "Word wakker",   "emoji": "☀️" },
+      { "key": "tande_borsel", "afrikaans": "Borsel tande",  "emoji": "🪥" },
+      { "key": "eet_kos",      "afrikaans": "Eet kos",       "emoji": "🥗" },
+      { "key": "was_hande",    "afrikaans": "Was hande",     "emoji": "🧼" },
+      { "key": "oefening",     "afrikaans": "Doen oefening", "emoji": "🤸" },
+      { "key": "gaan_slaap",   "afrikaans": "Gaan slaap",    "emoji": "🛏️" }
+    ]
+  },
+
+  "ls-14": {
+    "prompt": "Sit die dae in volgorde!",
+    "items": [
+      { "key": "maandag",   "afrikaans": "Maandag",   "emoji": "1️⃣" },
+      { "key": "dinsdag",   "afrikaans": "Dinsdag",   "emoji": "2️⃣" },
+      { "key": "woensdag",  "afrikaans": "Woensdag",  "emoji": "3️⃣" },
+      { "key": "donderdag", "afrikaans": "Donderdag", "emoji": "4️⃣" },
+      { "key": "vrydag",    "afrikaans": "Vrydag",    "emoji": "5️⃣" },
+      { "key": "saterdag",  "afrikaans": "Saterdag",  "emoji": "6️⃣" },
+      { "key": "sondag",    "afrikaans": "Sondag",    "emoji": "7️⃣" }
+    ]
+  },
+
+  "math-09": {
+    "prompt": "Sit die dag in volgorde!",
+    "items": [
+      { "key": "oggend", "afrikaans": "Oggend", "emoji": "🌅" },
+      { "key": "middag", "afrikaans": "Middag", "emoji": "☀️" },
+      { "key": "aand",   "afrikaans": "Aand",   "emoji": "🌆" },
+      { "key": "nag",    "afrikaans": "Nag",    "emoji": "🌙" }
+    ]
+  },
+
+  "math-10": {
+    "sort": {
+      "prompt": "Sorteer: vrugte of groente?",
+      "bins": [
+        { "key": "vrugte",  "afrikaans": "Vrugte",  "emoji": "🍎" },
+        { "key": "groente", "afrikaans": "Groente", "emoji": "🥕" }
+      ],
+      "items": [
+        { "cat": "vrugte",  "emoji": "🍌" },
+        { "cat": "vrugte",  "emoji": "🍓" },
+        { "cat": "vrugte",  "emoji": "🍇" },
+        { "cat": "vrugte",  "emoji": "🍊" },
+        { "cat": "groente", "emoji": "🥕" },
+        { "cat": "groente", "emoji": "🌽" },
+        { "cat": "groente", "emoji": "🥔" },
+        { "cat": "groente", "emoji": "🍅" }
+      ]
+    }
   }
 }

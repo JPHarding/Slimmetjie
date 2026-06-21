@@ -29,6 +29,18 @@ const RENDERERS = {
   'counting-tap':     () => import('./modules/counting-tap.js'),
   'tap-and-label':    () => import('./modules/tap-and-label.js'),
   'sing-along':       () => import('./modules/sing-along.js'),
+  'tap-and-name':     () => import('./modules/tap-and-name.js'),
+  'tap-and-sound':    () => import('./modules/tap-and-name.js'),
+  'vocab-flashcard':  () => import('./modules/tap-and-name.js'),
+  'matching-game':    () => import('./modules/matching-game.js'),
+  'number-recognition': () => import('./modules/number-recognition.js'),
+  'shape-matching':   () => import('./modules/shape-tap.js'),
+  'shape-sort':       () => import('./modules/shape-tap.js'),
+  'comparison-game':  () => import('./modules/comparison.js'),
+  'comparison-visual': () => import('./modules/comparison.js'),
+  'sequence-tap':     () => import('./modules/sequence.js'),
+  'sequence-calendar': () => import('./modules/sequence.js'),
+  'sort-and-count':   () => import('./modules/sort-and-count.js'),
 };
 
 let MODULES = [];
@@ -233,7 +245,18 @@ function openParentPanel() {
 }
 
 // ---- Service Worker ----
+// Plaaslik (ontwikkeling) word die SW oorgeslaan sodat lêers altyd vars laai —
+// geen harde herlaai nodig nie. Op die regte werf (GitHub Pages) bly dit aktief
+// vir volledige vanlyn-gebruik.
 function registerSW() {
+  const local = ['localhost', '127.0.0.1', '[::1]', ''].includes(location.hostname);
+  if (local) {
+    // ruim enige vorige plaaslike SW op sodat ou kasse nie vassteek nie
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister()));
+    }
+    return;
+  }
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(err => console.warn('SW-fout:', err));
   }

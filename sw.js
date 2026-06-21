@@ -2,7 +2,7 @@
 // Scope kom outomaties van die SW se eie ligging, so dit werk by "/" en "/slimmetjie/".
 
 // Verhoog hierdie weergawe by elke ontplooiing sodat kliënte vars lêers kry.
-const CACHE = 'slimmetjie-v6';
+const CACHE = 'slimmetjie-v11';
 
 // Kern-app — moet bestaan; cache by installasie.
 const CORE = [
@@ -30,6 +30,13 @@ const CORE = [
   'modules/counting-tap.js',
   'modules/tap-and-label.js',
   'modules/sing-along.js',
+  'modules/tap-and-name.js',
+  'modules/matching-game.js',
+  'modules/number-recognition.js',
+  'modules/shape-tap.js',
+  'modules/comparison.js',
+  'modules/sequence.js',
+  'modules/sort-and-count.js',
   // Fase 2 diere-fotos (bestaan reeds)
   'Images/hond.jpg', 'Images/kat.jpg', 'Images/koei.jpg', 'Images/perd.jpg',
   'Images/skaap.jpg', 'Images/hoender.jpg', 'Images/olifant.jpg', 'Images/leeu.jpg',

@@ -8,8 +8,9 @@ Skryf MP3s na ../audio/ (plat) plus 'n audio/index.json met die lys sleutels wat
 bestaan. Die app speel daardie MP3s; waar 'n sleutel ontbreek val dit terug op die
 blaaier se Web Speech API — netwerk hier is dus opsioneel, die app práát altyd.
 
-Alles word data-gedrewe afgelei uit graad_r_caps_modules.json + data/content.json,
-so brei nuwe modules vanself uit sodra hul inhoud bygevoeg word.
+Alles word data-gedrewe afgelei uit graad_r_modules.json + data/content.json.
+collect() hanteer GENERIES enige module met "items" / "numbers" / "parts" /
+"songs", so brei nuwe modules vanself uit sodra hul inhoud bygevoeg word.
 """
 
 import asyncio
@@ -61,34 +62,35 @@ def slug(key: str) -> str:
 
 
 def collect() -> dict:
-    """Bou {ge-slugde sleutel: teks} vir alles wat gegenereer moet word."""
+    """Bou {ge-slugde sleutel: teks} vir alles wat gegenereer moet word.
+    Generies oor alle modules en alle inhoudsvorms."""
     jobs = dict(PHRASES)
 
     # Module-titels (alle modules — die tuiskaarte kondig dit aan)
-    caps = json.loads((ROOT / "graad_r_caps_modules.json").read_text(encoding="utf-8"))
+    caps = json.loads((ROOT / "graad_r_modules.json").read_text(encoding="utf-8"))
     for m in caps.get("modules", []):
         jobs[f"{m['id']}_titel"] = m["afrikaans_label"]
 
-    # Module-inhoud (Fase 2; verdere modules kom vanself by)
+    # Module-inhoud — generies
     content = json.loads((ROOT / "data" / "content.json").read_text(encoding="utf-8"))
-
-    for item in content.get("ls-06", {}).get("items", []):       # diere
-        jobs[item["key"]] = item["afrikaans"]
-        if item.get("klankKey"):
-            jobs[item["klankKey"]] = item.get("klank", item["afrikaans"])
-
-    for item in content.get("ls-04", {}).get("items", []):       # kleure
-        jobs[item["key"]] = item["afrikaans"]
-
-    for n, word in content.get("math-01", {}).get("numbers", {}).items():   # tel
-        jobs[f"getal_{n}"] = word
-
-    for p in content.get("ls-02", {}).get("parts", []):          # liggaam
-        jobs[p["part"]] = p["afrikaans"]
-
-    for song in content.get("hl-08", {}).get("songs", []):       # liedjies
-        for line in song.get("lines", []):
-            jobs[line["key"]] = line["text"]
+    for data in content.values():
+        for item in data.get("items", []):
+            jobs[item["key"]] = item["afrikaans"]
+            if item.get("klankKey"):
+                jobs[item["klankKey"]] = item.get("klank", item["afrikaans"])
+        for n, word in data.get("numbers", {}).items():
+            jobs[f"getal_{n}"] = word
+        for p in data.get("parts", []):
+            jobs[p["part"]] = p["afrikaans"]
+        for song in data.get("songs", []):
+            for line in song.get("lines", []):
+                jobs[line["key"]] = line["text"]
+        for p in data.get("matching", {}).get("pairs", []):
+            jobs[p["key"]] = p["afrikaans"]
+        for k, text in data.get("phrases", {}).items():
+            jobs[k] = text
+        for b in data.get("sort", {}).get("bins", []):
+            jobs[b["key"]] = b["afrikaans"]
 
     return {slug(k): v for k, v in jobs.items()}
 
@@ -117,7 +119,6 @@ async def main():
             ok += 1
         await asyncio.sleep(0.15)                                # vermy tempo-beperking
 
-    # index.json = alle MP3s wat nou werklik bestaan (ge-slugde stamname)
     existing = sorted(p.stem for p in AUDIO_DIR.glob("*.mp3"))
     (AUDIO_DIR / "index.json").write_text(
         json.dumps(existing, ensure_ascii=False), encoding="utf-8"
