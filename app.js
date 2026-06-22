@@ -41,6 +41,20 @@ const RENDERERS = {
   'sequence-tap':     () => import('./modules/sequence.js'),
   'sequence-calendar': () => import('./modules/sequence.js'),
   'sort-and-count':   () => import('./modules/sort-and-count.js'),
+  'scene-tap':        () => import('./modules/tap-and-name.js'),
+  'position-game':    () => import('./modules/position-game.js'),
+  'pattern-complete': () => import('./modules/pattern-complete.js'),
+  'story-listen':     () => import('./modules/sing-along.js'),
+  'picture-describe': () => import('./modules/tap-and-name.js'),
+  'sound-match':      () => import('./modules/sound-match.js'),
+  'rhyme-match':      () => import('./modules/rhyme-match.js'),
+  'interactive-book': () => import('./modules/interactive-book.js'),
+  'alphabet-tap':     () => import('./modules/alphabet-tap.js'),
+};
+
+// Sommige modules het 'n eie renderer per id (nie net per aktiwiteitstipe nie)
+const ID_RENDERERS = {
+  'ls-01': () => import('./modules/self-intro.js'),
 };
 
 let MODULES = [];
@@ -142,7 +156,7 @@ async function openModule(id) {
   mascot.pose('happy');
   view.replaceChildren();
 
-  const loader = RENDERERS[m.app_activity_type];
+  const loader = ID_RENDERERS[id] || RENDERERS[m.app_activity_type];
   if (!loader) { renderBinnekort(m); return; }
 
   try {

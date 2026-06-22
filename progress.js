@@ -43,6 +43,15 @@ export function setVolume(v) { state.volume = Math.max(0, Math.min(1, +v)); save
 export function getTelVlak() { return state.telVlak; }
 export function setTelVlak(v) { state.telVlak = (+v === 10 ? 10 : 5); save(state); }
 
+// Profiel (ls-01 "Wie is ek?") — apart gestoor want die foto-DataURL is groot.
+const PKEY = 'slimmetjie.profile.v1';
+export function getProfile() {
+  try { return JSON.parse(localStorage.getItem(PKEY) || 'null'); } catch (e) { return null; }
+}
+export function setProfile(p) {
+  try { localStorage.setItem(PKEY, JSON.stringify(p)); } catch (e) { /* bv. te groot / privaat-modus */ }
+}
+
 export function resetProgress() {
   state = Object.assign({}, DEFAULTS, { babyMode: state.babyMode, volume: state.volume });
   save(state);

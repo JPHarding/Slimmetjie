@@ -24,6 +24,15 @@ export function highlightAnswer(el) {
   mascot.pose('wave');
 }
 
+// Gedeelde "Klaar gedoen!"-paneel met sterre + tuis-knoppie
+export function klaarPaneel(stage, stars, onTuis) {
+  stage.innerHTML = `
+    <h2 class="module-titel">Klaar gedoen!</h2>
+    <div style="font-size:clamp(40px,12vmin,110px);color:#FFD166">${'★'.repeat(stars)}${'☆'.repeat(3 - stars)}</div>
+    <button class="foto-knop" id="tuis">Tuis toe 🏠</button>`;
+  stage.querySelector('#tuis').addEventListener('click', onTuis);
+}
+
 // Punt-teller per sessie -> 1..3 sterre op akkuraatheid
 export function makeScorer() {
   let correct = 0, total = 0;

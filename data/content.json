@@ -300,5 +300,156 @@
         { "cat": "groente", "emoji": "🍅" }
       ]
     }
+  },
+
+  "ls-08": {
+    "items": [
+      { "key": "son",    "afrikaans": "Son",    "emoji": "☀️",  "photo": "son.jpg" },
+      { "key": "reen",   "afrikaans": "Reën",   "emoji": "🌧️",  "photo": "reen.jpg" },
+      { "key": "wolke",  "afrikaans": "Wolke",  "emoji": "☁️",  "photo": "wolke.jpg" },
+      { "key": "wind",   "afrikaans": "Wind",   "emoji": "💨",  "photo": "wind.jpg" },
+      { "key": "sneeu",  "afrikaans": "Sneeu",  "emoji": "❄️",  "photo": "sneeu.jpg" },
+      { "key": "warm",   "afrikaans": "Warm",   "emoji": "🌡️" },
+      { "key": "koud",   "afrikaans": "Koud",   "emoji": "🥶" },
+      { "key": "somer",  "afrikaans": "Somer",  "emoji": "🏖️" },
+      { "key": "winter", "afrikaans": "Winter", "emoji": "⛄" },
+      { "key": "lente",  "afrikaans": "Lente",  "emoji": "🌸" },
+      { "key": "herfs",  "afrikaans": "Herfs",  "emoji": "🍂" }
+    ]
+  },
+
+  "math-06": {
+    "phrases": { "waar_kat": "Waar is die kat?" },
+    "positions": [
+      { "key": "bo",    "afrikaans": "Bo" },
+      { "key": "onder", "afrikaans": "Onder" },
+      { "key": "langs", "afrikaans": "Langs" },
+      { "key": "in",    "afrikaans": "In" }
+    ]
+  },
+
+  "math-07": {
+    "phrases": { "vraag_volgende": "Wat kom volgende?" }
+  },
+
+  "ls-01": {
+    "items": [
+      { "key": "bly",      "afrikaans": "Bly" },
+      { "key": "hartseer", "afrikaans": "Hartseer" },
+      { "key": "kwaad",    "afrikaans": "Kwaad" },
+      { "key": "bang",     "afrikaans": "Bang" }
+    ]
+  },
+
+  "hl-01": {
+    "songs": [
+      {
+        "key": "storie1", "title": "Die Klein Hond", "icon": "🐶",
+        "lines": [
+          { "key": "st1_1", "text": "Daar was eendag 'n klein hond." },
+          { "key": "st1_2", "text": "Hy het in die tuin gespeel." },
+          { "key": "st1_3", "text": "Hy het 'n bal gekry." },
+          { "key": "st1_4", "text": "Woef, woef! sê die hond." }
+        ]
+      },
+      {
+        "key": "storie2", "title": "Die Rooi Appel", "icon": "🍎",
+        "lines": [
+          { "key": "st2_1", "text": "'n Appel hang aan die boom." },
+          { "key": "st2_2", "text": "Dit is rooi en rond." },
+          { "key": "st2_3", "text": "Die kind pluk die appel." },
+          { "key": "st2_4", "text": "Dit is lekker en soet!" }
+        ]
+      }
+    ]
+  },
+
+  "hl-02": {
+    "items": [
+      { "key": "sm_kat",   "afrikaans": "Kat",   "emoji": "🐱", "letter": "k" },
+      { "key": "sm_koei",  "afrikaans": "Koei",  "emoji": "🐄", "letter": "k" },
+      { "key": "sm_kers",  "afrikaans": "Kers",  "emoji": "🕯️", "letter": "k" },
+      { "key": "sm_bal",   "afrikaans": "Bal",   "emoji": "⚽", "letter": "b" },
+      { "key": "sm_boom",  "afrikaans": "Boom",  "emoji": "🌳", "letter": "b" },
+      { "key": "sm_bus",   "afrikaans": "Bus",   "emoji": "🚌", "letter": "b" },
+      { "key": "sm_son",   "afrikaans": "Son",   "emoji": "☀️", "letter": "s" },
+      { "key": "sm_slang", "afrikaans": "Slang", "emoji": "🐍", "letter": "s" },
+      { "key": "sm_ster",  "afrikaans": "Ster",  "emoji": "⭐", "letter": "s" },
+      { "key": "sm_maan",  "afrikaans": "Maan",  "emoji": "🌙", "letter": "m" },
+      { "key": "sm_muis",  "afrikaans": "Muis",  "emoji": "🐭", "letter": "m" },
+      { "key": "sm_melk",  "afrikaans": "Melk",  "emoji": "🥛", "letter": "m" }
+    ]
+  },
+
+  "hl-04": {
+    "rounds": [
+      { "key": "ry_huis", "afrikaans": "Huis", "emoji": "🏠", "rym": { "key": "ry_muis", "afrikaans": "Muis", "emoji": "🐭" }, "opsies": [ { "key": "ry_boom", "afrikaans": "Boom", "emoji": "🌳" }, { "key": "ry_son", "afrikaans": "Son", "emoji": "☀️" } ] },
+      { "key": "ry_hond", "afrikaans": "Hond", "emoji": "🐶", "rym": { "key": "ry_mond", "afrikaans": "Mond", "emoji": "👄" }, "opsies": [ { "key": "ry_kat", "afrikaans": "Kat", "emoji": "🐱" }, { "key": "ry_bal", "afrikaans": "Bal", "emoji": "⚽" } ] },
+      { "key": "ry_maan", "afrikaans": "Maan", "emoji": "🌙", "rym": { "key": "ry_kraan", "afrikaans": "Kraan", "emoji": "🚰" }, "opsies": [ { "key": "ry_blom", "afrikaans": "Blom", "emoji": "🌸" }, { "key": "ry_son", "afrikaans": "Son", "emoji": "☀️" } ] }
+    ],
+    "audioWords": [
+      { "key": "ry_huis", "afrikaans": "Huis" }, { "key": "ry_muis", "afrikaans": "Muis" },
+      { "key": "ry_boom", "afrikaans": "Boom" }, { "key": "ry_son", "afrikaans": "Son" },
+      { "key": "ry_hond", "afrikaans": "Hond" }, { "key": "ry_mond", "afrikaans": "Mond" },
+      { "key": "ry_kat", "afrikaans": "Kat" }, { "key": "ry_bal", "afrikaans": "Bal" },
+      { "key": "ry_maan", "afrikaans": "Maan" }, { "key": "ry_kraan", "afrikaans": "Kraan" },
+      { "key": "ry_blom", "afrikaans": "Blom" }
+    ]
+  },
+
+  "hl-05": {
+    "pages": [
+      { "key": "bk1", "text": "Die son skyn helder.",            "emoji": "☀️" },
+      { "key": "bk2", "text": "'n Voël vlieg in die lug.",        "emoji": "🐦" },
+      { "key": "bk3", "text": "Die hond hardloop in die gras.",   "emoji": "🐶" },
+      { "key": "bk4", "text": "Die kind lag lekker.",             "emoji": "🧒" },
+      { "key": "bk5", "text": "Nag kom, almal gaan slaap.",       "emoji": "🌙" }
+    ],
+    "audioWords": [
+      { "key": "bk1", "afrikaans": "Die son skyn helder." },
+      { "key": "bk2", "afrikaans": "'n Voël vlieg in die lug." },
+      { "key": "bk3", "afrikaans": "Die hond hardloop in die gras." },
+      { "key": "bk4", "afrikaans": "Die kind lag lekker." },
+      { "key": "bk5", "afrikaans": "Nag kom, almal gaan slaap." }
+    ]
+  },
+
+  "hl-06": {
+    "items": [
+      { "key": "hond",  "afrikaans": "Hond",  "emoji": "🐶" },
+      { "key": "boom",  "afrikaans": "Boom",  "emoji": "🌳" },
+      { "key": "son",   "afrikaans": "Son",   "emoji": "☀️" },
+      { "key": "bal",   "afrikaans": "Bal",   "emoji": "⚽" },
+      { "key": "blom",  "afrikaans": "Blom",  "emoji": "🌸" },
+      { "key": "voel",  "afrikaans": "Voël",  "emoji": "🐦" },
+      { "key": "kind",  "afrikaans": "Kind",  "emoji": "🧒" },
+      { "key": "huis",  "afrikaans": "Huis",  "emoji": "🏠" }
+    ]
+  },
+
+  "hl-07": {
+    "letters": [
+      { "l": "a", "word": "Appel", "emoji": "🍎" }, { "l": "b", "word": "Bal", "emoji": "⚽" },
+      { "l": "c" }, { "l": "d", "word": "Dier", "emoji": "🐕" }, { "l": "e", "word": "Eend", "emoji": "🦆" },
+      { "l": "f", "word": "Fiets", "emoji": "🚲" }, { "l": "g", "word": "Gras", "emoji": "🌱" },
+      { "l": "h", "word": "Hond", "emoji": "🐶" }, { "l": "i" }, { "l": "j", "word": "Jas", "emoji": "🧥" },
+      { "l": "k", "word": "Kat", "emoji": "🐱" }, { "l": "l", "word": "Leeu", "emoji": "🦁" },
+      { "l": "m", "word": "Maan", "emoji": "🌙" }, { "l": "n", "word": "Neus", "emoji": "👃" },
+      { "l": "o", "word": "Oog", "emoji": "👁️" }, { "l": "p", "word": "Perd", "emoji": "🐴" },
+      { "l": "q" }, { "l": "r", "word": "Roos", "emoji": "🌹" }, { "l": "s", "word": "Son", "emoji": "☀️" },
+      { "l": "t", "word": "Trein", "emoji": "🚂" }, { "l": "u" }, { "l": "v", "word": "Voël", "emoji": "🐦" },
+      { "l": "w", "word": "Water", "emoji": "💧" }, { "l": "x" }, { "l": "y" }, { "l": "z", "word": "Zebra", "emoji": "🦓" }
+    ],
+    "audioWords": [
+      { "key": "letter_a", "afrikaans": "A" }, { "key": "letter_b", "afrikaans": "B" }, { "key": "letter_c", "afrikaans": "C" },
+      { "key": "letter_d", "afrikaans": "D" }, { "key": "letter_e", "afrikaans": "E" }, { "key": "letter_f", "afrikaans": "F" },
+      { "key": "letter_g", "afrikaans": "G" }, { "key": "letter_h", "afrikaans": "H" }, { "key": "letter_i", "afrikaans": "I" },
+      { "key": "letter_j", "afrikaans": "J" }, { "key": "letter_k", "afrikaans": "K" }, { "key": "letter_l", "afrikaans": "L" },
+      { "key": "letter_m", "afrikaans": "M" }, { "key": "letter_n", "afrikaans": "N" }, { "key": "letter_o", "afrikaans": "O" },
+      { "key": "letter_p", "afrikaans": "P" }, { "key": "letter_q", "afrikaans": "Q" }, { "key": "letter_r", "afrikaans": "R" },
+      { "key": "letter_s", "afrikaans": "S" }, { "key": "letter_t", "afrikaans": "T" }, { "key": "letter_u", "afrikaans": "U" },
+      { "key": "letter_v", "afrikaans": "V" }, { "key": "letter_w", "afrikaans": "W" }, { "key": "letter_x", "afrikaans": "X" },
+      { "key": "letter_y", "afrikaans": "Y" }, { "key": "letter_z", "afrikaans": "Z" }
+    ]
   }
 }

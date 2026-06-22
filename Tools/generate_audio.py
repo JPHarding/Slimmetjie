@@ -91,6 +91,10 @@ def collect() -> dict:
             jobs[k] = text
         for b in data.get("sort", {}).get("bins", []):
             jobs[b["key"]] = b["afrikaans"]
+        for p in data.get("positions", []):
+            jobs[p["key"]] = p["afrikaans"]
+        for w in data.get("audioWords", []):
+            jobs[w["key"]] = w["afrikaans"]
 
     return {slug(k): v for k, v in jobs.items()}
 

@@ -84,6 +84,10 @@ function speak(text) {
   });
 }
 
+// Praat dinamiese teks direk (bv. persoonlike besonderhede wat nie vooraf as
+// MP3 gegenereer kan word nie). Gebruik die af-ZA Web Speech stem indien beskikbaar.
+export function speakText(text) { stop(); return speak(text); }
+
 export function stop() {
   token++;                      // ongeldig maak enige in-vlug terugval
   if (current) { try { current.pause(); } catch (e) {} current = null; }

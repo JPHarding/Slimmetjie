@@ -2,7 +2,7 @@
 // Scope kom outomaties van die SW se eie ligging, so dit werk by "/" en "/slimmetjie/".
 
 // Verhoog hierdie weergawe by elke ontplooiing sodat kliënte vars lêers kry.
-const CACHE = 'slimmetjie-v11';
+const CACHE = 'slimmetjie-v13';
 
 // Kern-app — moet bestaan; cache by installasie.
 const CORE = [
@@ -37,6 +37,13 @@ const CORE = [
   'modules/comparison.js',
   'modules/sequence.js',
   'modules/sort-and-count.js',
+  'modules/position-game.js',
+  'modules/pattern-complete.js',
+  'modules/self-intro.js',
+  'modules/sound-match.js',
+  'modules/rhyme-match.js',
+  'modules/interactive-book.js',
+  'modules/alphabet-tap.js',
   // Fase 2 diere-fotos (bestaan reeds)
   'Images/hond.jpg', 'Images/kat.jpg', 'Images/koei.jpg', 'Images/perd.jpg',
   'Images/skaap.jpg', 'Images/hoender.jpg', 'Images/olifant.jpg', 'Images/leeu.jpg',
