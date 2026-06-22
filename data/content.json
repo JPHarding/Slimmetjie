@@ -338,6 +338,24 @@
       { "key": "hartseer", "afrikaans": "Hartseer" },
       { "key": "kwaad",    "afrikaans": "Kwaad" },
       { "key": "bang",     "afrikaans": "Bang" }
+    ],
+    "audioWords": [
+      { "key": "ek_naam_prefix", "afrikaans": "My naam is" },
+      { "key": "ek_taal_afrikaans", "afrikaans": "Ek praat Afrikaans" },
+      { "key": "ek_taal_engels", "afrikaans": "Ek praat Engels" },
+      { "key": "ek_age_0",  "afrikaans": "Ek is nul jaar oud" },
+      { "key": "ek_age_1",  "afrikaans": "Ek is een jaar oud" },
+      { "key": "ek_age_2",  "afrikaans": "Ek is twee jaar oud" },
+      { "key": "ek_age_3",  "afrikaans": "Ek is drie jaar oud" },
+      { "key": "ek_age_4",  "afrikaans": "Ek is vier jaar oud" },
+      { "key": "ek_age_5",  "afrikaans": "Ek is vyf jaar oud" },
+      { "key": "ek_age_6",  "afrikaans": "Ek is ses jaar oud" },
+      { "key": "ek_age_7",  "afrikaans": "Ek is sewe jaar oud" },
+      { "key": "ek_age_8",  "afrikaans": "Ek is agt jaar oud" },
+      { "key": "ek_age_9",  "afrikaans": "Ek is nege jaar oud" },
+      { "key": "ek_age_10", "afrikaans": "Ek is tien jaar oud" },
+      { "key": "ek_age_11", "afrikaans": "Ek is elf jaar oud" },
+      { "key": "ek_age_12", "afrikaans": "Ek is twaalf jaar oud" }
     ]
   },
 

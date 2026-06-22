@@ -12,6 +12,9 @@ const FEELINGS = [
   { key: 'bang',     afrikaans: 'Bang',     emoji: '😨' },
 ];
 
+// Vir die Web Speech terugval-teks van die ouderdom-sin (die MP3 is reeds vooraf gebak)
+const AGE_WORDS = ['nul', 'een', 'twee', 'drie', 'vier', 'vyf', 'ses', 'sewe', 'agt', 'nege', 'tien', 'elf', 'twaalf'];
+
 export function render(view, { award }) {
   const stage = document.createElement('div');
   stage.className = 'module-stage';
@@ -25,9 +28,14 @@ export function render(view, { award }) {
     stage.innerHTML = `
       <div class="vorm">
         <h2 class="module-titel">Wie is ek?</h2>
-        <label>Naam<input id="f-naam" type="text" maxlength="20" value="${esc(p.naam)}"></label>
+        <label>Naam<input id="f-naam" type="text" maxlength="7" value="${esc(p.naam)}"></label>
         <label>Ouderdom<input id="f-age" type="number" min="0" max="12" value="${esc(p.age)}"></label>
-        <label>Taal<input id="f-taal" type="text" maxlength="20" value="${esc(p.taal) || 'Afrikaans'}"></label>
+        <label>Taal
+          <select id="f-taal">
+            <option${p.taal === 'Engels' ? '' : ' selected'}>Afrikaans</option>
+            <option${p.taal === 'Engels' ? ' selected' : ''}>Engels</option>
+          </select>
+        </label>
         <label>Iets spesiaal (opsioneel)<input id="f-fact" type="text" maxlength="40" placeholder="Ek hou van dinosourusse" value="${esc(p.fact)}"></label>
         <label>Foto (opsioneel)<input id="f-foto" type="file" accept="image/*"></label>
         <p class="disclaimer">🔒 Hierdie inligting (en die foto) word net op hierdie toestel gestoor — dit word nêrens gestuur of opgelaai nie.</p>
@@ -40,10 +48,12 @@ export function render(view, { award }) {
       if (file) fotoData = await skaleerFoto(file);
     });
     stage.querySelector('#f-stoor').addEventListener('click', () => {
+      let age = parseInt(stage.querySelector('#f-age').value, 10);
+      age = isNaN(age) ? '' : String(Math.max(0, Math.min(12, age)));
       const prof = {
-        naam: (stage.querySelector('#f-naam').value || '').trim() || 'Ek',
-        age:  (stage.querySelector('#f-age').value || '').trim(),
-        taal: (stage.querySelector('#f-taal').value || '').trim() || 'Afrikaans',
+        naam: (stage.querySelector('#f-naam').value || '').trim().slice(0, 7) || 'Ek',
+        age,
+        taal: stage.querySelector('#f-taal').value || 'Afrikaans',
         fact: (stage.querySelector('#f-fact').value || '').trim(),
         foto: fotoData,
       };
@@ -59,13 +69,22 @@ export function render(view, { award }) {
       ? `<div class="ek-foto"><img src="${p.foto}" alt="${esc(p.naam)}"></div>`
       : `<div class="ek-foto avatar-emoji">🧒</div>`;
 
+    // Begrensde dele speel vooraf-gebakte AdriNeural MP3; net die naam + vrye feit gebruik Web Speech.
     const kaarte = [
-      { html: `${avatar}<span class="seq-label">My naam is ${esc(p.naam)}</span>`, sê: `My naam is ${p.naam}.` },
+      { html: `${avatar}<span class="seq-label">My naam is ${esc(p.naam)}</span>`,
+        play: () => say('ek_naam_prefix', 'My naam is').then(() => speakText(p.naam)) },
     ];
-    if (p.age)  kaarte.push({ html: `<span class="emoji-mid">🎂</span><span class="seq-label">Ek is ${esc(p.age)} jaar oud</span>`, sê: `Ek is ${p.age} jaar oud.` });
-    if (p.taal) kaarte.push({ html: `<span class="emoji-mid">💬</span><span class="seq-label">Ek praat ${esc(p.taal)}</span>`, sê: `Ek praat ${p.taal}.` });
-    if (p.fact) kaarte.push({ html: `<span class="emoji-mid">⭐</span><span class="seq-label">${esc(p.fact)}</span>`, sê: p.fact });
-    FEELINGS.forEach(f => kaarte.push({ html: `<span class="emoji-mid">${f.emoji}</span><span class="seq-label">${f.afrikaans}</span>`, key: f.key, sê: f.afrikaans }));
+    if (p.age !== '' && p.age != null) {
+      const woord = AGE_WORDS[p.age] || p.age;
+      kaarte.push({ html: `<span class="emoji-mid">🎂</span><span class="seq-label">Ek is ${esc(p.age)} jaar oud</span>`,
+        play: () => say('ek_age_' + p.age, `Ek is ${woord} jaar oud`) });
+    }
+    if (p.taal) kaarte.push({ html: `<span class="emoji-mid">💬</span><span class="seq-label">Ek praat ${esc(p.taal)}</span>`,
+      play: () => say('ek_taal_' + String(p.taal).toLowerCase(), `Ek praat ${p.taal}`) });
+    if (p.fact) kaarte.push({ html: `<span class="emoji-mid">⭐</span><span class="seq-label">${esc(p.fact)}</span>`,
+      play: () => speakText(p.fact) });
+    FEELINGS.forEach(f => kaarte.push({ html: `<span class="emoji-mid">${f.emoji}</span><span class="seq-label">${f.afrikaans}</span>`,
+      play: () => say(f.key, f.afrikaans) }));
 
     stage.innerHTML = `<p class="prompt">Tik en hoor!</p><div class="ek-grid" id="grid"></div><button class="foto-knop" id="wysig">✏️ Wysig</button>`;
     const grid = stage.querySelector('#grid');
@@ -73,11 +92,7 @@ export function render(view, { award }) {
       const b = document.createElement('button');
       b.className = 'choice ek-kaart';
       b.innerHTML = k.html;
-      b.addEventListener('click', () => {
-        mascot.pose('happy');
-        if (k.key) say(k.key, k.sê);     // gevoelens: vooraf-gegenereerde MP3
-        else speakText(k.sê);            // persoonlike teks: Web Speech (dinamies)
-      });
+      b.addEventListener('click', () => { mascot.pose('happy'); k.play(); });
       grid.appendChild(b);
     });
     stage.querySelector('#wysig').addEventListener('click', () => { stop(); toonVorm(p); });
